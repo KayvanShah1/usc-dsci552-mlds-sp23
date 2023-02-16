@@ -13290,7 +13290,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Insert your code BEGIN</span>
@@ -13304,7 +13304,7 @@ div#notebook {
     <span class="n">five_bias</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="c1">## Insert your code BEGIN</span>
     <span class="k">for</span> <span class="n">order</span> <span class="ow">in</span> <span class="n">avg_pred</span><span class="p">:</span>
-        <span class="n">diff</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">order</span><span class="p">)</span> <span class="o">-</span> <span class="n">x_eval</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+        <span class="n">diff</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">order</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x_eval</span><span class="p">))</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
         <span class="n">five_bias</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">diff</span><span class="p">)</span>
     <span class="c1">## Insert your code END        </span>
     <span class="k">return</span> <span class="n">five_bias</span>
@@ -13314,7 +13314,7 @@ div#notebook {
     <span class="c1"># returns a list of length 5</span>
     <span class="n">five_variance</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="c1">## Insert your code BEGIN</span>
-    <span class="n">five_variance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="n">models_evals_list</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">five_variance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="n">models_evals</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
     <span class="c1">## Insert your code END  </span>
     <span class="k">return</span> <span class="n">five_variance</span>
 
@@ -13359,7 +13359,7 @@ div#notebook {
 <span class="c1">## Insert your code END</span>
 
 
-<span class="n">bias_lst</span> <span class="o">=</span> <span class="n">bias_error</span><span class="p">(</span><span class="n">avg_preds_list</span><span class="p">,</span> <span class="n">f</span><span class="p">(</span><span class="n">x_eval</span><span class="p">))</span>
+<span class="n">bias_lst</span> <span class="o">=</span> <span class="n">bias_error</span><span class="p">(</span><span class="n">avg_preds_list</span><span class="p">,</span> <span class="n">x_eval</span><span class="p">)</span>
 
 <span class="n">variance_lst</span> <span class="o">=</span> <span class="n">variance_error</span><span class="p">(</span><span class="n">avg_preds_list</span><span class="p">,</span> <span class="n">models_evals_list</span><span class="p">)</span>
 
@@ -13423,7 +13423,7 @@ Shape of `avg_preds_list` =  (5, 10)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Error DataFrame</span>
@@ -13447,13 +13447,13 @@ Shape of `avg_preds_list` =  (5, 10)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[95]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-935942a9-bad2-4589-85ea-4ef2296e54ca">
+  <div id="df-b7ce264c-9146-4380-8e0a-3744ccfdd73f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -13518,7 +13518,7 @@ Shape of `avg_preds_list` =  (5, 10)
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-935942a9-bad2-4589-85ea-4ef2296e54ca')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-b7ce264c-9146-4380-8e0a-3744ccfdd73f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -13569,12 +13569,12 @@ Shape of `avg_preds_list` =  (5, 10)
 
       <script>
         const buttonEl =
-          document.querySelector('#df-935942a9-bad2-4589-85ea-4ef2296e54ca button.colab-df-convert');
+          document.querySelector('#df-b7ce264c-9146-4380-8e0a-3744ccfdd73f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-935942a9-bad2-4589-85ea-4ef2296e54ca');
+          const element = document.querySelector('#df-b7ce264c-9146-4380-8e0a-3744ccfdd73f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -13604,7 +13604,7 @@ Shape of `avg_preds_list` =  (5, 10)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Average predictions</span>
@@ -13622,13 +13622,13 @@ Shape of `avg_preds_list` =  (5, 10)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[96]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-2095fd67-d07a-4660-b1f2-e627c031045a">
+  <div id="df-5fea40fd-e299-49b6-ba1d-12b8ce5c3157">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -13729,7 +13729,7 @@ Shape of `avg_preds_list` =  (5, 10)
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2095fd67-d07a-4660-b1f2-e627c031045a')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-5fea40fd-e299-49b6-ba1d-12b8ce5c3157')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -13780,12 +13780,12 @@ Shape of `avg_preds_list` =  (5, 10)
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2095fd67-d07a-4660-b1f2-e627c031045a button.colab-df-convert');
+          document.querySelector('#df-5fea40fd-e299-49b6-ba1d-12b8ce5c3157 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2095fd67-d07a-4660-b1f2-e627c031045a');
+          const element = document.querySelector('#df-5fea40fd-e299-49b6-ba1d-12b8ce5c3157');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
