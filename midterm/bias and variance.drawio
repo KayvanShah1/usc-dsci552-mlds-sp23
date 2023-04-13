@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-13T02:53:47.482Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="cvlralI2ZhPHtGhhCCGc" version="21.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-13T02:55:18.364Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="6NRBLTm2fEEAPFxUOJnT" version="21.1.7" type="github">
   <diagram name="Page-1" id="n2d0vgvp-Uka55Qokzz8">
     <mxGraphModel dx="794" dy="478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -141,10 +141,10 @@
           <mxGeometry x="334" y="830" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="b6f6ASs7helM83i5lhmz-3" value="Overfitting" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="524" y="900" width="100" height="30" as="geometry" />
+          <mxGeometry x="564" y="980" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="b6f6ASs7helM83i5lhmz-4" value="Underfitting" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="364" y="900" width="100" height="30" as="geometry" />
+          <mxGeometry x="219" y="900" width="100" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
