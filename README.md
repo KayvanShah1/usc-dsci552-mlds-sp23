@@ -1,8 +1,11 @@
 # DSCI 552 - Machine Learning for Data Science
 
 
+## Authors
+1. [Kayvan Shah](https://github.com/KayvanShah1) | `MS in Applied Data Science` | `USC`
+
 #### LICENSE
-This repository is licensed under the `BSD 3-Clause` License. See the [LICENSE](LICENSE) file for details.
+This repository is licensed under the `BSD 4-Clause` License. See the [LICENSE](LICENSE) file for details.
 
 #### Disclaimer
 
