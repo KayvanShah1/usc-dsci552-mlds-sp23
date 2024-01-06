@@ -15,6 +15,19 @@ We encourage you to engage actively, experiment with the materials provided, and
 
 Happy learning!
 
+## Table of contents
+| Assignment | Topic Covered                 |
+|------------|-------------------------------|
+| Assignment 1 | Classification, VC Dimension, Error Function Analysis |
+| Assignment 2 | Exploratory Data Analysis and K-Nearest Neighbors Classification |
+| Assignment 3 | Bias & Variance, EM, Bayesian Theory |
+| Assignment 4 | Decision Trees and Naive Bayes |
+| Assignment 5 | Image Classification on MNIST using simple NN, CNN |
+| Assignment 6 | Image Classification on CIFAR-10 dataset using CNNs |
+| --- | --- |
+| Midterm | Midterm 1 |
+| Project | Landmarks & Category Classification |
+
 ## Authors
 1. [Kayvan Shah](https://github.com/KayvanShah1) | `MS in Applied Data Science` | `USC`
 
